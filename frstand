@@ -5,6 +5,13 @@ It has everything you need
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/elemental/refs/heads/main/elementalstand.lua"))()
 
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "give it a sec to load",
+Text = "this has everything you need", 
+
+Duration = 4 
+})
+
 function sendNotification(title, message)
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = title,
