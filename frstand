@@ -3,14 +3,13 @@ This script has been edited and improved by InDay
 It has everything you need
 ]]
 
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/elemental/refs/heads/main/elementalstand.lua"))()
 
 function sendNotification(title, message)
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = title,
         Text = message,
-        Duration = 5
+        Duration = 10
     })
 end
 
