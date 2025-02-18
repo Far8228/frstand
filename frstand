@@ -1,0 +1,79 @@
+--[[
+This script has been edited and improved by InDay
+It has everything you need
+]]
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/elemental/refs/heads/main/elementalstand.lua"))()
+
+function sendNotification(title, message)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = title,
+        Text = message,
+        Duration = 5
+    })
+end
+
+print("[DEBUG] stand loading")
+sendNotification("[DEBUG]", "stand loading")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privateantivoid/refs/heads/main/privateantivoid"))()
+print("[DEBUG] anti void")
+sendNotification("[DEBUG]", "anti void")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privateantistomp/refs/heads/main/privateantistomp"))()
+print("[DEBUG] anti stomp")
+sendNotification("[DEBUG]", "anti stomp")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privatefpsboost/refs/heads/main/privatefpsboost"))()
+print("[DEBUG] fpsboost")
+sendNotification("[DEBUG]", "fpsboost")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privatecodes/refs/heads/main/privatecodes"))()
+print("[DEBUG] codes")
+sendNotification("[DEBUG]", "codes")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/private/refs/heads/main/private"))()
+print("[DEBUG] InDay")
+sendNotification("[DEBUG]", "InDay")
+
+local args = {
+    [1] = "JoinCrew",
+    [2] = "33445836"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("MainEvent"):FireServer(unpack(args))
+print("[DEBUG] joined crew")
+sendNotification("[DEBUG]", "joined crew")
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local player = Players.LocalPlayer
+
+function onCharacterAdded()
+    task.wait(4)
+
+    local args = {
+        [1] = "JoinCrew",
+        [2] = "33445836"
+    }
+
+    ReplicatedStorage:WaitForChild("MainEvent"):FireServer(unpack(args))
+end
+
+-- Connect the function to when the character respawns
+player.CharacterAdded:Connect(onCharacterAdded)
+
+-- If the character already exists, run the function immediately
+if player.Character then
+    onCharacterAdded()
+end
+print("[DEBUG] auto join crew")
+sendNotification("[DEBUG]", "auto join crew")
+
+print("[DEBUG] fpsboost2")
+print("[DEBUG] script loaded")
+sendNotification("[DEBUG]", "fpsboost2")
+sendNotification("[DEBUG]", "script loaded")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privatefpsboost2/refs/heads/main/privatefpsboost2"))()
