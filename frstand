@@ -4,8 +4,8 @@ It has everything you need
 ]]
 
 game:GetService("StarterGui"):SetCore("SendNotification",{
-Title = "give it a sec to load",
-Text = "this has everything you need", 
+Title = "InDay",
+Text = "give it a sec to load", 
 Duration = 4 
 })
 
