@@ -3,14 +3,13 @@ This script has been edited and improved by InDay
 It has everything you need
 ]]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/elemental/refs/heads/main/elementalstand.lua"))()
-
 game:GetService("StarterGui"):SetCore("SendNotification",{
 Title = "give it a sec to load",
 Text = "this has everything you need", 
-
 Duration = 4 
 })
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/faisal31312/elemental/refs/heads/main/elementalstand.lua"))()
 
 function sendNotification(title, message)
     game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -35,13 +34,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privatefpsboo
 print("[DEBUG] fpsboost")
 sendNotification("[DEBUG]", "fpsboost")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privatecodes/refs/heads/main/privatecodes"))()
-print("[DEBUG] codes")
-sendNotification("[DEBUG]", "codes")
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/private/refs/heads/main/private"))()
-print("[DEBUG] InDay")
-sendNotification("[DEBUG]", "InDay")
+print("[DEBUG] animations")
+sendNotification("[DEBUG]", "animations")
 
 local args = {
     [1] = "JoinCrew",
@@ -77,6 +72,10 @@ if player.Character then
 end
 print("[DEBUG] auto join crew")
 sendNotification("[DEBUG]", "auto join crew")
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privatecodes/refs/heads/main/privatecodes"))()
+print("[DEBUG] codes")
+sendNotification("[DEBUG]", "codes")
 
 print("[DEBUG] fpsboost2")
 print("[DEBUG] script loaded")
