@@ -34,10 +34,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/privatefpsboo
 print("[DEBUG] fpsboost")
 sendNotification("[DEBUG]", "fpsboost")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Far8228/private/refs/heads/main/private"))()
-print("[DEBUG] animations")
-sendNotification("[DEBUG]", "animations")
-
 local args = {
     [1] = "JoinCrew",
     [2] = "33445836"
