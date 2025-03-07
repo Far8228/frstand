@@ -49,7 +49,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local player = Players.LocalPlayer
 
 function onCharacterAdded()
-    task.wait(4)
+    task.wait(999)
 
     local args = {
         [1] = "JoinCrew",
